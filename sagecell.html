@@ -8,7 +8,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DevMasterTeam</title>
+    <title>SageMathCell</title>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>$(function () {
+    // Make the div with id 'mycell' a Sage cell
+    //sagecell.makeSagecell({inputLocation:  '#mycell',
+    //                       template:       sagecell.templates.minimal,
+    //                       evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    });
+    </script>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +33,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/sagecell.css" rel="stylesheet">
 
   </head>
 
@@ -31,34 +42,56 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">SageMath teste</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Voltar para página principal</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Álgebra Linear</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Derivada</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfólio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">EDO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="./sagecell.html">SageCell</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Funções Matemáticas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Gráficos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
+<header>
+
+  </header>
+    <header class=" masthead  text-black  d-flex">
+
+
+    <div class="container my-auto">
+        
+        <div class="col-lg-12 mx-auto">
+          <h1 style="color:#1444f7; font-size:30px;">Digite seu cálculo do Sage abaixo e clique em “Evaluate”</h1>
+          
+        </div>
+            
+        <div class="compute"> 
+          <script type="text/x-sage">plot(sin(x), (x, 0, 2*pi))</script>
+
+        </div>
+            
+      </div>
+
+
+
+
+      <!--<div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
@@ -71,7 +104,9 @@
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
           </div>
         </div>
-      </div>
+      </div> -->  
+
+
     </header>
 
     <section class="bg-primary" id="about">
