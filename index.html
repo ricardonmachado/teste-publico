@@ -8,18 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SageMathCell</title>
-    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
-    <script>$(function () {
-    // Make the div with id 'mycell' a Sage cell
-    //sagecell.makeSagecell({inputLocation:  '#mycell',
-    //                       template:       sagecell.templates.minimal,
-    //                       evalButtonText: 'Activate'});
-    // Make *any* div with class 'compute' a Sage cell
-    sagecell.makeSagecell({inputLocation: 'div.compute',
-                           evalButtonText: 'Evaluate'});
-    });
-    </script>
+    <title>Elementos de Computação Matemática com SageMath</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,56 +22,49 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/sagecell2.css" rel="stylesheet">
+    <link href="css/principal.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
 
-    <!-- Navigation 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #1444f7" id="mainNav">
-
-style="background-color: #1444f7"
-
-    -->
-
-
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top"  id="mainNav">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html">Página Principal</a>
-        
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#page-top">SageCell</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#algebralinear">Álgebra Linear</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
             </li>
             
+
+
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#derivada">Cálculo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#edo">EDO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#funcoes">Funções Matemáticas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#graficos">Gráficos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#operacoes">Operações</a>
+              <a class="nav-link js-scroll-trigger" href="#errata">Errata</a>
             </li>
 
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sagecell">SageMath</a>
+            </li>
+
+<!--
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#extras">Extras</a>
+            </li>
+-->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#autores">Autores</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -90,785 +72,305 @@ style="background-color: #1444f7"
 
 
 
-
-    <header class=" masthead  text-black  d-flex">
-
-
-    <div class="container my-auto">
-
-      <div class="row">
-        
-        <div class="col-lg-12 mx-auto">
-          <h1 style="color:#1444f7; font-size:30px;">Digite seu cálculo do Sage abaixo e clique em “Evaluate”</h1>
-        </div>
-            <p class="text-faded mb-4"></p>
-
-        </div>
-        <div class="compute"> 
-          <script type="text/x-sage"></script>
-        </div>  
-
-    </div>
-
-
-      <!--
-
+    <!--  Tela Inicial (início)  -->
+    <header class="masthead text-center  d-flex">
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Your Favorite Source of Free Bootstrap Themes</strong>
+            <h1 class="text-white text-uppercase">
+              <strong>Em Breve</strong>
             </h1>
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          		
+            <h2 class=" text-white mb-5 ">Elementos de Computação <br> Matemática com SageMath</h2>
+        
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Informações</a>
           </div>
         </div>
       </div>
--->
-
     </header>
-
-   
-    <section class="bg-primary" id="algebralinear">
-      <div class="container">
-        <div class="row">
-          <!--<div class="col-lg-8 mx-auto text-center"> -->
-            <h2 class="section-heading text-black">Álgebra Linear</h2>
-            <hr class="light my-4">
-
-<div class="table-responsive">            
-<table class="table">
-  <thead class="thead-dark">
-
-    <tr>
-      <th scope="col">Operação Matemática</th>
-      <th scope="col">Sintaxe Sage</th>
-      <th scope="col">Exemplo</th>
-      <th scope="col">Resultado</th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <tr>
-      <th scope="row">$A = \left(\begin{array}{rr} a & b \\c & d \end{array}\right)$</th>
-      <td>matrix([[a,b],[c,d]])</td>
-      <td> A=matrix([[1,2],[1,0]])<br>
-           show(A)
-      </td>
-      <td>$\left(\begin{array}{rr} 1 & 2 \\1 & 0 \end{array}\right)$</td>
-    </tr>
-
-    <tr>
-      <th scope="row">Soma de matrizes: $A + B$</th>
-      <td>A+B</td>
-      <td> A=matrix([[1,2],[1,0]])<br>
-           B=matrix([[0,-1],[1,0]])<br>
-           show(A + B)
-      </td>
-      <td>$\left(\begin{array}{rr} 1 & 1 \\2 & 0 \end{array}\right)$</td>
-    </tr>
-
-    <tr>
-      <th scope="row">Sistema Linear $Av=b$</th>
-      <td>A.solve_right(b)</td>
-      <td> A=matrix([[1,2,6],[1,2,0],[1,-2,3]])<br>
-           b=vector( [1, -1, 1] )<br>
-           A.solve_right(b)
-      </td>
-      <td>( -1/2, -1/4, 1/3 )</td>
-    </tr>
-    <tr>
-      <th scope="row">Núcleo de $A$</th>
-      <td>kernel(A)</td>
-      <td>A=matrix([[1,2,3],[1,2,3],[1,2,3]])<br>
-          kernel(A)</td>
-      <td>(1,0,-1)<br>
-          (0,1,-1)</td>
-    </tr>
-    <!--
-    <tr>
-      <th scope="row">Polinômio caracteristico de $A$</th>
-      <td>A.charpoly()</td>
-      <td>A=matrix([[1,2,3],[1,2,3],[1,2,3]])<br>
-          A.charpoly()</td>
-      <td>x^3 - 6*x^2</td>
-    </tr>
-    <tr>
-      <th scope="row">Autovalores de $A$</th>
-      <td>A.eigenvalues()</td>
-      <td>A=matrix([[1,2,3],[1,2,3],[1,2,3]])<br>
-          A.eigenvalues()</td>
-      <td>[6,0,0]</td>
-    </tr>
-    <tr>
-      <th scope="row">Autovetores de $A$</th>
-      <td>A.eigenvectors_right()</td>
-      <td>A=matrix([[1,2,3],[1,2,3],[1,2,3]])<br>
-          A.eigenvectors_right()</td>
-      <td>[(6,[(1,1,1)],1),(0,[(1,0,-1/3),(0,1,-2/3)],2)]</td>
-    </tr> -->
-    
-  </tbody>
-</table>
-</div>
-<!--
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
--->
-            
-          <!--</div>-->
-        </div>
-      </div>
-    </section>
+    <!--  Tela Inicial (fim)  -->
 
 
 
-
-
-
-
-
-    <section  id="derivada">
-      <div class="container">
-        <div class="row">
-          <!--<div class="col-lg-8 mx-auto text-center"> -->
-            <h2 class="section-heading text-black">Cálculo</h2>
-            <hr class="light my-4">
-
-<div class="table-responsive">            
-<table class="table">
-  <thead class="thead-dark">
-
-    <tr>
-      <th scope="col">Operação Matemática</th>
-      <th scope="col">Sintaxe Sage</th>
-      <th scope="col">Exemplo</th>
-      <th scope="col">Resultado</th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <tr>
-      <th scope="row">$\displaystyle \lim_{x\rightarrow a} f(x)$</th>
-      <td>limit(f,x = a)</td>
-      <td> limit( x^2+ 2*x, x = 1)
-      </td>
-      <td>3</td>
-    </tr>
-
-    <tr>
-      <th scope="row">$\dfrac{df}{dx}$</th>
-      <td>diff(f,x)</td>
-      <td> diff(sqrt(x), x)
-      </td>
-      <td>1/2/sqrt(x)</td>
-    </tr>
-    <tr>
-      <th scope="row">$\dfrac{d^nf}{dx^n}$</th>
-      <td>diff(f,x,n)</td>
-      <td>diff(sin(x), x, 3)</td>
-      <td>-cos(x)</td>
-    </tr>
-    <!--
-    <tr>
-      <th scope="row">$\dfrac{\partial f}{\partial x}$</th>
-      <td>diff(f,x)</td>
-      <td>var('y')<br>
-          diff(x^2+y^2, x)</td>
-      <td>2*x</td>
-    </tr>
-    <tr>
-      <th scope="row">$\dfrac{\partial^2 f}{\partial y \partial y}$</th>
-      <td>diff(f,y,y)</td>
-      <td>var('y')<br>
-          diff(x^2+y^2, y, y)</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th scope="row">$\dfrac{\partial^2 f}{\partial x \partial y}$</th>
-      <td>diff(f,x,y)</td>
-      <td>var('y')<br>
-          diff(x^2+y^2, x, y)</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th scope="row">$\dfrac{\partial^2 f}{\partial y \partial x}$</th>
-      <td>diff(f,y,x)</td>
-      <td>var('y,z')<br>
-          diff(x^2+x*y^2+z^2,y,x)</td>
-      <td>2*y</td>
-    </tr> -->
-    
-    <tr>
-      <th scope="row">$\displaystyle\int f(x)~dx$</th>
-      <td>integral(f,x)</td>
-      <td>integral(x^3, x)
-      <td>x^4/4</td>
-    </tr>
-
-
-  </tbody>
-</table>
-</div>
-<!--
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
--->
-            
-          <!--</div>-->
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="bg-primary" id="edo">
-      <div class="container">
-        <div class="row">
-          <!--<div class="col-lg-8 mx-auto text-center"> -->
-            <h2 class="section-heading text-black">EDO</h2>
-            <hr class="light my-4">
-
-<div class="table-responsive">            
-<table class="table">
-  <thead class="thead-dark">
-
-    <tr>
-      <th scope="col">Operação Matemática</th>
-      <th scope="col">Sintaxe Sage</th>
-      <th scope="col">Exemplo</th>
-      <th scope="col">Resultado</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">EDO de $1^a$ Ordem <br>
-                      $y'(x) + py(x) = q$
-      </th>
-      <td>desolve(edo, y)</td>
-      <td> y = function( 'y' )( x ) <br>
-            show(desolve(diff(y,x)+y-1,y)) 
-      </td>
-      <td>$(C+e^x)e^{(-x)}$</td>
-    </tr>
-    <tr>
-      <th scope="row">EDO de $2^a$ Ordem <br>
-                      $y''(x) + py'(x) + ky(x) = q(x)$
-      </th>
-      <td>desolve(edo, y)</td>
-      <td> y = function( 'y' )( x ) <br>
-          show(desolve(diff( y, x, 2) - y == x  , y ))
-      </td>
-      <td>$K_2e^{(-x)}+K_1e^x -x$</td>
-    </tr>    
-
-        <tr>
-      <th scope="row">Problema de Valor Inicial <br>
-                      $y'(x) + py(x) = q$ <br>
-                      $y(x_0) = y_0$
-
-      </th>
-      <td>desolve(edo,y,ics=[x_0,y_0])  </td>
-      <td>  y=function('y')(x)<br>
-            desolve(diff(y,x) + y-1,y,ics=[10,2])
-      </td>
-      <td>$(e^{10}+e^x)e^{(-x)}$</td>
-    </tr>    
-    
-    
-  </tbody>
-</table>
-</div>
-<!--
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
--->
-            
-          <!--</div>-->
-        </div>
-      </div>
-    </section>
-
-
-    <section  id="funcoes">
-      <div class="container">
-        <div class="row">
-          <!--<div class="col-lg-8 mx-auto text-center"> -->
-            <h2 class="section-heading text-black">Funções Matemáticas</h2>
-            <hr class="light my-4">
-
-<div class="table-responsive">            
-<table class="table">
-  <thead class="thead-dark">
-
-    <tr>
-      <th scope="col">Operação Matemática</th>
-      <th scope="col">Sintaxe Sage</th>
-      <th scope="col">Exemplo</th>
-      <th scope="col">Resultado</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Valor absoluto de $x$</th>
-      <td>abs(x)</td>
-      <td> abs(-2)
-      </td>
-      <td>2</td>
-    </tr>
-
-    <tr>
-      <th scope="row">Raiz quadrada de $x$</th>
-      <td>sqrt(x)</td>
-      <td> sqrt(225)
-      </td>
-      <td>15</td>
-    </tr>
-
-    <tr>
-      <th scope="row">Logaritmo de $x$ na base $b$</th>
-      <td>log(x,b)</td>
-      <td> log(1024, 2)
-      </td>
-      <td>10</td>
-    </tr>
-
-    
-  </tbody>
-</table>
-</div>
-<!--
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
--->
-            
-          <!--</div>-->
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="bg-primary" id="graficos">
-      <div class="container">
-        <div class="row">
-          <!--<div class="col-lg-8 mx-auto text-center"> -->
-            <h2 class="section-heading text-black">Gráficos</h2>
-            <hr class="light my-4">
-
-<div class="table-responsive">            
-<table class="table">
-  <thead class="thead-dark">
-
-    <tr>
-      <th scope="col">Operação Matemática</th>
-      <th scope="col">Sintaxe Sage</th>
-      <th scope="col">Exemplo</th>
-      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Função $f$</th>
-      <td>plot(f, (x, a, b))</td>
-      <td> plot(x^2, (x, -1, 1))</td>
-    </tr>
-
-    <tr>
-      <th scope="row">Curva Paramétrica</th>
-      <td>parametric_plot( [ x( t ) , y( t ) ], ( t, a, b ) )</td>
-      <td> var( 't' )<br>
-           parametric_plot( [ t^2, t^3 ], ( t, -1 , 1 ) )</td>
-    </tr>
-
-    <tr>
-      <th scope="row">Curva Implícita C</th>
-      <td>  implicit_plot( C, (x, a, b), (y, c, d ) )</td>
-      <td>  var( 'y' )<br>
-            implicit_plot( x^3+y^3 == 3*x*y, ( x, -3, 2 ), ( y, -3, 2 ) )</td>
-    </tr>
-
-    <tr>
-      <th scope="row">Curva em coordenadas Polares</th>
-      <td>polar_plot( r(theta), ( theta, a, b ) )</td>
-      <td> var( 'theta' )<br>
-           polar_plot( theta/2*pi, ( theta, 0, 2*pi ) )</td>
-    </tr>    
-  
-    
-    
-  </tbody>
-</table>
-</div>
-<!--
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
--->
-            
-          <!--</div>-->
-        </div>
-      </div>
-    </section>
-
-
-    <section  id="operacoes">
-      <div class="container">
-        <div class="row">
-          <!--<div class="col-lg-8 mx-auto text-center"> -->
-            <h2 class="section-heading text-black">Operações</h2>
-            <hr class="light my-4">
-
-<div class="table-responsive">            
-<table class="table">
-  <thead class="thead-dark">
-
-    <tr>
-      <th scope="col">Operador</th>
-      <th scope="col">Funções Sage</th>
-      <th scope="col">Exemplo</th>
-      <th scope="col">Resultado</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">=</th>
-      <td>Atribuição</td>
-      <td> x=1; x
-      </td>
-      <td>1</td>
-    </tr>
-
-    <tr>
-      <th scope="row">** ou ^</th>
-      <td>Potenciação</td>
-      <td> 2**5+2^2
-      </td>
-      <td>36</td>
-    </tr>
-
-    <tr>
-      <th scope="row">%</th>
-      <td>Módulo</td>
-      <td> 11%2
-      </td>
-      <td>1</td>
-    </tr>
-
-    <tr>
-      <th scope="row">></th>
-      <td>Comparação (maior que) </td>
-      <td> 2>1
-      </td>
-      <td>True</td>
-    </tr>        
-    
-  </tbody>
-</table>
-</div>
-<!--
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
--->
-            
-          <!--</div>-->
-        </div>
-      </div>
-    </section>
-<!--
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>
-              <h3 class="mb-3">Up to Date</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>
-              <h3 class="mb-3">Made with Love</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
-      </div>
-    </section>
--->
-
-
-
-
-
-
-    <section class="bg-primary" id="contact">
+    <!--  Tela 2 - Sobre o livro (início)  -->
+    <section class="bg-dark text-white" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-          	<hr class="my-4">
-            <h2 class="section-heading">Desenvolvido pelos Professores:<br> 
+            <h2 class="section-heading text-white">Sobre o Livro:</h2>
+            <hr class="light my-4">
+            
+            <p class="text-faded mb-4">
+            O avanço da capacidade dos computadores possibilitou o desenvolvimento de ferramentas para a matemática na abordagem de problemas reais, seja através de computação simbólica ou numérica, ultrapassando as antes intransponíveis barreiras humanas de cálculo. Neste contexto, o conhecimento de um software matemático tornou-se indispensável na formação de todo profissional bem qualificado das áreas de Ciências Exatas e Engenharias.
+            </p>
+			<p class="text-faded mb-4">
+			Este livro introduz o software matemático SageMath através de uma breve apresentação da sintaxe, de exemplos e da solução de problemas de disciplinas básicas da matemática. O SageMath é robusto, gratuito e tão eficiente quanto os softwares matemáticos comerciais. O texto aborda principalmente parte do conteúdo das disciplinas de Cálculo Diferencial e Integral, Álgebra Linear e Equações Diferenciais Ordinárias. Além disso, inclui uma breve introdução à programação. 
+			</p>
+			<p class="text-faded mb-4">
+			A obra destina-se a um público bastante amplo, que inclui desde estudantes de início de graduação até pesquisadores experientes. Contém vários exemplos, exercícios, problemas e um capítulo de projetos. As soluções para os problemas são apresentadas nos apêndices.
+
+            </p>
+            
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#about" target="_blank" >Sumário
+            </a>
+
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#autores">Autores</a>
+            
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="https://loja.sbm.org.br/index.php/sbm/colecao-textos-universitarios.html" target="_blank" >loja</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Tela 2 - Sobre o livro (fim)  -->
+
+
+    <!--  Tela 3 - Errata (início)  -->
+    <section  id="errata">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading ">Errata</h2>
+            
+            <hr class="my-4">
+            <p class=" mb-4">A errata está disponível para download. Se você encontrou algum erro no livro, verifique se ele já está na errata. Caso contrário, por favor nos informe enviando um e-mail para: sagectu@gmail.com, com assunto ERRATA.</p>
+			<!--
+			<a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Comunicar erro</a>
+            -->
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="errata/errata.pdf" target="_blank">Baixar Errata</a>
+            
+          </div>
+        </div>
+      </div>
+	</section>
+	<!--  Tela 3 - Errata (fim)  -->
+
+
+	<!--  Tela 4 - SageMath (início)  -->
+    <section class="bg-azul_escuro" id="sagecell">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">SageMath</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">
+             O <strong>SageMath</strong> é um software matemático livre e de código aberto (open-source), desenvolvido sob a licença GPL por uma comunidade de programadores e matemáticos. Ele engloba e se utiliza de um grande número de pacotes pré-existentes como Maxima, GAP, Pari/GP, softwares de renderização de imagens e muitos outros, integrando-os em uma interface única que busca ser amigável e de fácil assimilação. Todos os principais pacotes são instalados juntamente com o SageMath e muitos outros pacotes existem para extensões em áreas específicas. Por este motivo SageMath é adequado para uso em ensino e pesquisa. 
+			</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="http://www.sagemath.org/" target="_blank">Site do SageMath</a>
+
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="instalacao.html">Guia de Instalação</a>
+			<hr class="light my-4">
+			
+			<p class="text-faded mb-4">
+
+			O SageMath também pode ser utilizado na nuven através do SageMathCell ou do CoCalc.</p>
+			
+			<p class="text-faded mb-4">
+
+			<p class="text-faded mb-4">
+            O projeto <strong>SageMathCell</strong> é uma interface web fácil de usar o SageMath. Nós preparamos uma página com o SageMathCell e vários exemplos nos seguintes tópicos: Álgebra Linear, Cálculo, EDO e Gráficos de Funções.</p>
+
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="sagecell.html">
+            SageMathCell</a>
+
+            <hr class="light my-4">
+            <p class="text-faded mb-4">
+			O <strong>CoCalc</strong> é um espaço de trabalho on-line virtual para cálculos, pesquisa, colaboração e documentos de autoria. O SageMath é um dos softwares disponíveis.  </p>
+			
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="http://cocalc.com" target="_blank">Site do CoCalc</a>
+
+          </div>
+        </div>
+      </div>
+	</section>
+	<!--  Tela 4 - SageMath (fim)  -->
+
+
+	<!--  Tela 5 - Extras (início)  
+    <section class="bg-dark text-white" id="extras">
+      <div class="container text-center">
+        <h2 class="mb-4">Em desenvolvimento</h2>
+        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">???</a>
+      </div>
+    </section>
+      Tela 5 - Extras (fim)  -->
+
+
+    <!--  Tela 6 - Autores (início)  -->
+    <!--
+    <section class="bg-primary" id="autores">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+          	
+            <h2 class="section-heading">Autores:<br> 
+            
             <a href="http://www.dm.ufrpe.br/prof/leon">Leon Silva</a> <br>
             <a href="http://www.dm.ufrpe.br/prof/marcelo">Marcelo Santos</a> <br>
             <a href="https://sites.google.com/site/ricardonunesmachadojr/">Ricardo Machado</a>
-
+			
         	</h2>
             <hr class="my-4">
 
+		<div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/leon.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/leon.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Professor
+                  </div>
+                  <div class="project-name">
+                    Leon Silva
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/marcelo.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/marcelo.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Professor
+                  </div>
+                  <div class="project-name">
+                    Marcelo Santos
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/ric.jpg">
+              <img class="img-fluid"  src="img/portfolio/thumbnails/ric.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Professor
+                  </div>
+                  <div class="project-name">
+                    Ricardo Machado
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      	</div>
+          </div>
+      </div>
+    </section>
+    -->
+<!--  Tela 6 - Autores (fim)  
+
+-->
+
+<!-- Page Features -->
+<section class="bg-primary" id="autores">
+   
+   <div class="container text-center">
+   	<h2 class="section-heading">Autores:<br> </h2>
+   	<hr class="my-4">
+   <div class="row">
+
+
+
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a ><img class="card-img-top" src="img/portfolio/fullsize/leon.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="http://www.dm.ufrpe.br/prof/leon" target="_blank">Leon Silva</a>
+                </h4>
+                <!--<h5>$24.99</h5> -->
+                <p class="card-text">Leon Silva, natural de Recife-PE, é professor do Departamento de Matemática da Universidade Federal Rural de Pernambuco desde 2011. É Mestre em Matemática pela UFC e Doutor em Computação pela UFPE. Sua área de pesquisa é Matemática Computacional.</p>
+              </div>
+              <!--
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a ><img class="card-img-top" src="img/portfolio/fullsize/marcelo.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="http://www.dm.ufrpe.br/prof/marcelo" target="_blank">Marcelo Santos</a>
+                </h4>
+                
+                <p class="card-text">Marcelo Santos, natural de Garanhuns-PE, graduou-se em Matemática na UPE. Obteve mestrado e doutorado em Matemática pela UFPE. Foi professor da UFRN. Atualmente é professor do Departamento de Matemática da Universidade Federal Rural de Pernambuco. Sua área de pesquisa é Mecânica Celeste.</p>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a ><img class="card-img-top" src="img/portfolio/fullsize/ricardo.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://sites.google.com/site/ricardonunesmachadojr/" target="_blank">Ricardo Machado</a>
+                </h4>
+                
+                <p class="card-text">Ricardo Machado, natural de Timbaúba-PE, é Bacharel, Mestre e Doutor em Matemática pela UFPE, onde foi professor por cinco anos. Desde 2015 é professor do Departamento de Matemática da Universidade Federal Rural de Pernambuco. Sua área de pesquisa é Topologia Combinatória.</p>
+              </div>
+              
+            </div>
+          </div>
+
+</div>
+        </div>
+        </section>
+    <!-- /.row -->
+
+
+	<!--  Tela 7 - contato (início)  -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Entre em contato com os autores</h2>
+            
             <!--
             <hr class="my-4">
             
-            <p class="mb-5">site principal: <br> 
-            https://sites.google.com/site/ricardonunesmachadojr/</p>
+            <p class="mb-5">Escrever um texto</p> <br>
 			-->
-
-            <!--<i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">teste@teste.com</a>
-            </p> -->
-          
-
-
-
-<div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/leon.png">
-              <img class="img-fluid" src="img/portfolio/thumbnails/leon.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Professor
-                  </div>
-                  <div class="project-name">
-                    Leon Silva
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/marcelo.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/marcelo.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Professor
-                  </div>
-                  <div class="project-name">
-                    Marcelo Santos
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/ric.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/ric.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Professor
-                  </div>
-                  <div class="project-name">
-                    Ricardo Machado
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          
-          
-        </div>
-      </div>
-
-
-
-
+              <a href="mailto:sagectu@gmail.com">sagectu@gmail.com</a>
+            </p>
 
           </div>
-        
-      </div>
-    </section>
 
-<!--
-<section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/leon.png">
-              <img class="img-fluid" src="img/portfolio/thumbnails/leon.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Professor
-                  </div>
-                  <div class="project-name">
-                    Leon Silva
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/marcelo.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/marcelo.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Professor
-                  </div>
-                  <div class="project-name">
-                    Marcelo Santos
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/ric.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/ric.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Professor
-                  </div>
-                  <div class="project-name">
-                    Ricardo Machado
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          
-          
         </div>
       </div>
     </section>
--->
+    <!--  Tela 7 - contato (fim)  -->
+
+
+  <!-- Footer 
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    
+  </footer>-->
+
+
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -879,12 +381,8 @@ style="background-color: #1444f7"
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-
-
-
 
   </body>
 
